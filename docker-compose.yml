@@ -1,0 +1,16 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: calculadora-rtc-frontend:latest
+    container_name: calculadora-rtc-frontend
+    ports:
+      - "${FRONTEND_PORT:-3000}:80"
+    environment:
+      # Endereço da API da Calculadora RTC (backend). Ajuste no .env.
+      API_TARGET: ${API_TARGET:-http://host.docker.internal:8080}
+    extra_hosts:
+      # Permite alcançar a API rodando na máquina host (Linux).
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
