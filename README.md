@@ -1,6 +1,15 @@
 # Calculadora RTC — Frontend (Análise NFS-e)
 
+[![Licença: MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-blue.svg)](./LICENSE)
+[![Docker](https://img.shields.io/badge/Docker-pronto-2496ED.svg?logo=docker&logoColor=white)](./Dockerfile)
+[![React 18](https://img.shields.io/badge/React-18-61DAFB.svg?logo=react&logoColor=white)](https://react.dev)
+[![Vite 6](https://img.shields.io/badge/Vite-6-646CFF.svg?logo=vite&logoColor=white)](https://vitejs.dev)
+[![Backend: Receita Federal](https://img.shields.io/badge/backend-Receita%20Federal-1351B4.svg)](https://github.com/ReceitaFederal/calculadora-rtc-regime-regular)
+
 Interface web para a **Calculadora do Regime Regular (IBS · CBS · IS)** da Receita Federal, com um módulo adicional de **importação e análise de NFS-e**.
+
+> ⚙️ **Requer o backend** [calculadora-rtc-regime-regular](https://github.com/ReceitaFederal/calculadora-rtc-regime-regular) (API Spring Boot) em execução.
+> 🚀 **Instalação rápida para enviar aos amigos:** [INSTALL.md](./INSTALL.md).
 
 Permite calcular os tributos da reforma tributária a partir de notas de serviço, fazer uma **análise exploratória (EDA)** dos tributos das notas pretéritas e **projetar** a carga futura com base na média, mediana e tendência dos meses.
 
